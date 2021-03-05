@@ -1,0 +1,360 @@
+ a{ 
+     text-decoration: none; 
+     
+ }
+ .social-icons ul li a i{ 
+    color:#fff; 
+}  
+.social-icons ul li a:visited{ 
+    color: black;
+}
+ul{ 
+    list-style:none; 
+    padding: 0;
+}  
+.color{ 
+    background:skyblue;
+} 
+img{ 
+    max-width: 100%;
+} 
+.navigation li a{ 
+    color:#777777!important;
+}
+
+/* header option */ 
+header{ 
+    height:25px;
+} 
+.my-header h5{ 
+    color: #fff; 
+    font-size:17px;
+} 
+.menu ul li a{ 
+    display: inline-block; 
+    padding: 0 10px; 
+    color: #777777; 
+    font-size: 18px;  
+    transition: all .4s linear; 
+    line-height: 1.5;  
+} 
+.menu ul li a:hover{ 
+    color: rgb(154, 154, 255);
+} 
+/* header banner */ 
+.header-banner{ 
+    background: url(./images/thumb_606_reference.jpg)no-repeat top center; 
+    background-size: cover; 
+    height: 100vh; 
+    position: relative; 
+    z-index: 1; 
+}  
+.header-banner::after{ 
+    content: ""; 
+    position: absolute; 
+    top:0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.3); 
+    z-index: -1;
+} 
+.tagline-wrap{ 
+    display: flex; 
+    flex-direction: column; 
+    justify-content:center; 
+    text-align: right; 
+    height: 100vh; 
+    color: #fff;
+} 
+.header-taglines { 
+  color: #fff;
+}
+ 
+.header-taglines h4{ 
+    font-size: 50px;
+} 
+.header-taglines h1{ 
+ font-size: 60px; 
+ font-weight: 700px; 
+ padding-bottom: 20px;
+} 
+.header-taglines p{ 
+    font-size: 20px;
+} 
+.header-btn{ 
+    padding-top: 20px;
+} 
+.header-btn a:nth-child(1) {
+    background: #0872b9;
+    border-radius: 0 !important;
+    color: white;
+    font-weight: 600;
+    padding: 15px 30px;
+    font-size: 22px; 
+} 
+.header-btn a:nth-child(2){ 
+    color: #fff; 
+    padding: 17px 32px ; 
+    font-weight: 600; 
+    border:2px solid #fff; 
+    border-radius: 0!important;
+} 
+/* about */ 
+ 
+.about-text p{ 
+    font-size: 1.1rem;
+} 
+.about-title{ 
+    position: relative; 
+    width: 100%; 
+    height: 100%;
+} 
+.about-title img{ 
+    display: block;
+    margin: auto;
+    position: relative;
+    right: 26px;
+    width: 113px;
+} 
+/* card */  
+.bg-grey{ 
+    background: #f1f1f1;
+} 
+
+.icon-img{ 
+    border: 4px solid white;
+    border-radius: 200px;
+    display: block;
+    margin: auto;
+    margin-top: auto;
+    margin-top: -45px;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px; 
+    display: grid; 
+    place-items: center;
+    
+} 
+.icon-img img{ 
+  width: 100%;
+}
+
+ /* card */ 
+ .card-body h5{ 
+     color: #424242!important;
+ } 
+ 
+ /* gallery */ 
+ .grid-section{ 
+  display: grid; 
+  grid-template-columns: repeat(4,1fr); 
+  grid-template-rows: repeat(3,auto-fill); 
+  grid-gap: 20px;
+ }   
+.gallery{ 
+  width: 100%; 
+  height: 100%; 
+  overflow: hidden; 
+  position: relative; 
+  z-index: 1;
+} 
+.image::after{ 
+    content:''; 
+    position: absolute; 
+    top: 0; 
+    right: 0;  
+    transform: translate(-50%,-50%) center center;    
+    width:100%;  
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: 1; 
+    visibility: hidden; 
+    opacity: 0; 
+    transition: all .5s linear;
+} 
+.gallery::before{ 
+    content:url(images/bluejack.png); 
+    position: absolute; 
+    top:50%; 
+    left: 50%; 
+    transform:translate(-50%,-50%); 
+    z-index: 2; 
+    visibility: hidden; 
+    opacity: 0;
+} 
+.gallery:hover .image::after,.gallery:hover::before{ 
+    opacity: 1; 
+    visibility: visible;
+} 
+.image{ 
+    width: 100%; 
+    height: 100%; 
+    position: relative;
+} 
+.gallery .image img{ 
+    width: 100%; 
+    height: 100%; 
+   
+}  
+.gallery:nth-child(2){ 
+    grid-row: span 2;
+} 
+.gallery:nth-child(4){ 
+    grid-row: span 2;
+}
+ 
+.gallery:nth-child(5){ 
+    grid-row: span 2;
+}  
+ 
+.gallery:nth-child(6){ 
+    grid-column: 2/3; 
+    grid-row: 3/4;
+}  
+.gallery:nth-child(7){ 
+    grid-row: span 2;
+} 
+.user-image{ 
+    width: 100px; 
+    height: 100px;
+    display: flex; 
+    justify-content:center; 
+    border-radius:50%;   
+    overflow: hidden; 
+    position: relative; 
+    background: #ffffff;
+} 
+.user-image img{ 
+   position: absolute; 
+   top:60%; 
+   right: 0; 
+   width:100%; 
+   height:auto; 
+   transform: scale(2); 
+
+} 
+.star i{ 
+ color: cyan;
+}
+
+/* testimonial */ 
+ 
+.arrow{ 
+    position: relative;
+} 
+.arrow::after{ 
+    content: ""; 
+    position: absolute; 
+    top:-20px; 
+    left: 0; 
+    right: 0; 
+    margin: auto; 
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 20px;
+    border-color: transparent transparent #f1f1f1 transparent;
+} 
+ 
+.bg-light-black{ 
+    background: #353535;
+}
+.brand-text p{ 
+    color: #fff;
+}
+.brand-title h4{ 
+    color: #fff; 
+    font-weight: bold;
+} 
+.text-white{ 
+    color: #fff;
+} 
+ 
+.call-icon .icon-color{ 
+    color: #fff;  
+    background:#5bc5f4; 
+    width: 40px; 
+    height: 40px; 
+    border-radius:50%; 
+    display: inline-block; 
+    font-size: 25px; 
+    margin: auto; 
+    text-align: center;
+} 
+.phone-number a{ 
+    color: #fff; 
+    display: flex; 
+    direction: column; 
+
+} 
+.inner-info{ 
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: column; 
+    justify-content: center;  
+    align-content: space-between;
+} 
+.links ul li a{ 
+    font-size: 25px;
+} 
+
+
+.part-1 a{ 
+    display: block; 
+    color: #fff; 
+    font-size: 18px; 
+    transition: all .5s linear; 
+    font-weight: lighter; 
+    padding: 5px 0;
+}  
+.part-1 a:hover{ 
+    color:skyblue;
+} 
+.bg-5{ 
+    background: #555555; 
+    color: white;
+} 
+.bg-5 a{ 
+    color: skyblue;
+} 
+.image-gallery{ 
+    display: grid; 
+    grid-template-columns: repeat(3,1fr); 
+    grid-template-rows: repeat(2,1fr); 
+    grid-gap: 10px; 
+}  
+.image-gallery .pic{ 
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+    position: relative; 
+    
+} 
+.image-gallery .pic img{ 
+    width: 100%; 
+    height: 100%; 
+    transition: all .5s ease-in-out;
+} 
+.image-gallery .pic::after{ 
+    position: absolute; 
+    content: ''; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height:100%; 
+    background: rgba(135,206,235,0.3); 
+    opacity: 0; 
+    visibility: hidden; 
+    transition: all .4s ease-in-out;
+    
+} 
+.pic:hover::after{ 
+    visibility: visible; 
+    opacity: 1; 
+    
+} 
+.pic:hover img{ 
+  transform: scale(1.1);
+} 
+
